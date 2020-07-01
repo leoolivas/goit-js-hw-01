@@ -1,8 +1,8 @@
 let price = 0;
 
-let deliveryTo = prompt("В какую страну Вы хотели бы сделать заказ?");
+const deliveryTo = prompt("В какую страну Вы хотели бы сделать заказ?");
 
-let normalizedDeliveryTo = deliveryTo.toLowerCase();
+const normalizedDeliveryTo = deliveryTo.toLowerCase();
 
 switch (normalizedDeliveryTo) {
   case "китай":
@@ -26,7 +26,7 @@ switch (normalizedDeliveryTo) {
     break;
 
   default:
-    let message = `В Вашей стране доставка не доступна`;
+    const message = `В Вашей стране доставка не доступна`;
     alert(message);
 }
 

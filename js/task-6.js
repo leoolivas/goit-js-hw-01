@@ -11,12 +11,12 @@ while (true) {
   const notANumber = Number.isNaN(input);
 
   if (notANumber) {
-    let message = `Было введено не число, попробуйте еще раз`;
+    const message = `Было введено не число, попробуйте еще раз`;
     alert(message);
     continue;
   }
 
   total += input;
 }
-let message = `Общая сума чисел равна ${total}`;
+const message = `Общая сума чисел равна ${total}`;
 alert(message);

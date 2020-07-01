@@ -10,10 +10,10 @@ if (orderedQuantity === null) {
   totalPrice = pricePerDroid * orderedQuantity;
 }
 
-if (totalPrice >= credits) {
+if (totalPrice > credits) {
   console.log("Недостаточно средств на счету!");
 } else {
-  credits = credits - totalPrice;
+  credits -= totalPrice;
   console.log(
     `Вы купили ${orderedQuantity} дроида(ов), на счету осталось ${credits}`
   );
